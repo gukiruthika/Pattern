@@ -2,7 +2,7 @@ package pattern;
 
 public class EngineerHeartPattern {
 	/*
-	    erEnginee           gineerEng        
+	erEnginee           gineerEng        
     ineerEngineerEngi   rEngineerEngineer    
   gineerEngineerEngineerEngineerEngineerEng  
  gineerEngineerEngineerEngineerEngineerEngin 
@@ -43,14 +43,13 @@ rEngineerEngineerEngineerEngineerEngineerEngi
 		int space = 10, variation = 0;
 		for (int i = 0; i < 23; i++) {
 			for (int j = 2; j < 47; j++) {
-				if (j >= space && j < (49 - space)) { // Providing space at the beginning and end of each line
-					if ((i == 0 && j > 18 && j < 30) || (i == 1 && j > 22 && j < 26)) // Providing space at the middle
-																						// in the first two lines
+				if (j >= space && j < (49 - space)) { 
+					if ((i == 0 && j > 18 && j < 30) || (i == 1 && j > 22 && j < 26)) // Providing space at the middle in the first two lines
 						System.out.print(" ");
 					else
 						System.out.print(base[i][j]);
-				} else
-					System.out.print(" ");
+				} else	
+					System.out.print(" ");	// Providing space at the beginning and end of each line
 
 			}
 			if (i == 0)
